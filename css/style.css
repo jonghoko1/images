@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+a:link {
+    color: black;
+}
+a:visited {
+    color: black;
+}
+a:hover {
+    color: black;
+}
+a:active {
+    color: black;
+}
+
+/* header */
+header {
+    background-color: rgb(208, 208, 255);
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* wrap */
+#wrap {
+    display: flex;
+}
+
+/* SNB */
+#wrap aside {
+    background-color: #faf;
+    width: 200px;
+    min-height: calc(100vh - 200px);
+    padding: 40px 30px;
+}
+#wrap aside a {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* 메인페이지 */
+#wrap .mainpage {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #afa;
+    width: calc(100% - 200px);
+    display: flex;
+}
+/* 메인페이지_대표이미지 */
+#wrap .mainpage .main_image {
+    width: 20%;
+    background-color: #ddd;
+}
+#wrap .mainpage .main_image img {
+    width: 100%;
+}
+/* 메인페이지_자기소개 */
+#wrap .mainpage .text {
+    width: calc(80% - 30px);
+    background-color: #aaa;
+}
+#wrap .mainpage .text .name{
+    font-size: xx-large;
+    font-weight: bold;
+    border-bottom: 60px;
+}
+#wrap .mainpage .text .info{
+    font-weight: bold;
+    border-bottom: 60px;
+}
+#wrap .mainpage .text .about{
+    border-bottom: 60px;
+}
+
+/* 서브페이지 */
+#wrap .subpage {
+    width: calc(100% - 200px);
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* 서브페이지_사진첩 */
+#wrap .subpage .image {
+    width: 360px;
+    margin: 30px;
+}
+#wrap .subpage .image img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    line-height: 100px;
+    background-color: rgb(208, 208, 255);
+    height: 100px;
+}
